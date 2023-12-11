@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THANK YOU FOR PLAYING</title>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 114%;
+      object-fit: fill;
+      z-index: -1;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <video autoplay muted class="background-video" onended="location.href='project.html'">
+    <source src="MAP/video-background.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freddy Fazbear's Pizza Place</title>
+</head>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.play-button {
+  position: fixed;
+  bottom: 27%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 5vw;
+  color: rgb(255, 255, 255);
+  border: px solid transparent;
+  padding: 10px 20px;
+  background: none;
+  font-family: 'Times New Roman', Times, serif, cursive;
+  transition: border-color 0.1s ease-in-out;
+  animation: glow 1s infinite alternate;
+  border-radius: 5px;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.play-button:hover {
+  animation: none;
+  border-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+@keyframes glow {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+}
+
+.site-description {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+h3 {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: none;
+  box-shadow: 0px 0px 30px rgb(255, 255, 255);
+  white-space: nowrap;
+  padding-left: 100%;
+  padding-right: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+.PROJECT {
+  position: fixed;
+  top: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.name {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  .PROJECT,
+  .name {
+    font-size: 16px;
+  }
+
+  .play-button {
+    font-size: 30px;
+    bottom: 20%;
+  }
+}
+
+
+</style>
+
+<body>
+
+  <img src="backgroundgif.gif" class="background-image">
+
+  <audio autoplay loop>
+    <source src="videoplayback.mp3.m4a" type="audio/mp3">
+  </audio>
+<a href="1.html">
+  <button class="play-button">
+    PLAY
+  </button>
+</a>
+
+  <div class="site-description">
+    <p>Recommended device is PC</p>
+    <p>Press F11 to full screen</p>
+  </div>
+
+  <div>
+    <h3>
+      Freddy Fazbear's Pizzaria
+    </h3>
+  </div>
+
+  <div class="PROJECT">
+    <p>
+      PROJECT FOR ITE - 10
+    </p>
+  </div>
+
+  <div class="name">
+    <p>
+      Ranier Brylle L. Go
+    </p>
+  </div>
+</body>
+</html>
